@@ -29,6 +29,20 @@ const { title, description } = Astro.props;
 		<script>
 			// Add “loaded” class once the document has completely loaded.
 			addEventListener('load', () => document.documentElement.classList.add('loaded'));
+
+			// Handle transitions and theme preservation
+			document.addEventListener('astro:page-load', () => {
+				// Re-apply theme after page transitions
+				const theme = localStorage.getItem('theme');
+				document.documentElement.classList.toggle('theme-dark', theme === 'dark');
+				});
+			
+			// Handle theme preservation during view transitions
+			document.addEventListener('astro:after-swap', () => {
+				// Re-apply theme after content swap
+				const theme = localStorage.getItem('theme');
+				document.documentElement.classList.toggle('theme-dark', theme === 'dark');
+			});
 		</script>
 
 		<style>
