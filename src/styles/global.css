@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* Global variables */
 :root {
 	/* Colors */
@@ -260,3 +262,4 @@ h5 {
 		gap: 12rem;
 	}
 }
+@import "tailwindcss";
