@@ -27,19 +27,19 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hello, I'm Ujjwal Shrestha"
+					tagline="A Full Stack Developer based in Lalitpur, Nepal — building impactful web solutions with React, .NET, and Azure."
 					align="start"
 				>
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="trophy" size="1.33em" /> Mentor</Pill>
+						<Pill><Icon icon="pencil-line" size="1.33em" /> Problem Solver</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Ujjwal Shrestha"
 					width="480"
 					height="620"
 					src="/assets/portrait.jpg"
@@ -53,7 +53,7 @@ const projects = (await getCollection('work'))
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<p>A few projects I've built — from sustainability platforms to patient navigation systems.</p>
 				</header>
 
 				<div class="gallery">
@@ -78,19 +78,28 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Tech Stack</h3>
 					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
+						Tools and technologies I work with regularly.
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
+							[
+								{ name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+								{ name: 'ASP.NET', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg' },
+								{ name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+								{ name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' },
+								{ name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+								{ name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg' },
+								{ name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+								{ name: 'WordPress', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg' },
+							].map(({ name, icon }) => (
+								<li class="tech-card">
+									<img src={icon} alt={name} width="40" height="40" />
+									<p>{name}</p>
 								</li>
 							))
 						}
@@ -240,10 +249,43 @@ const projects = (await getCollection('work'))
 		box-shadow: var(--shadow-sm);
 	}
 
+	.tech-card {
+		display: flex;
+		flex-direction: column;
+		height: 7rem;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+		text-align: center;
+		border: 1px solid var(--gray-800);
+		border-radius: 1.5rem;
+		color: var(--gray-300);
+		background: var(--gradient-subtle);
+		box-shadow: var(--shadow-sm);
+		font-size: var(--text-sm);
+	}
+
+	.tech-card img {
+		width: 2.5rem;
+		height: 2.5rem;
+		object-fit: contain;
+	}
+
 	@media (min-width: 50em) {
 		.mention-card {
 			border-radius: 1.5rem;
 			height: 9.5rem;
+		}
+
+		.tech-card {
+			border-radius: 1.5rem;
+			height: 9.5rem;
+			gap: 0.75rem;
+		}
+
+		.tech-card img {
+			width: 3rem;
+			height: 3rem;
 		}
 	}
 </style>
