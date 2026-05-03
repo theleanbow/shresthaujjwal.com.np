@@ -2,6 +2,8 @@
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import atWorkImg from '../assets/at-work.jpg';
 ---
 
 <BaseLayout title="About | Ujjwal Shrestha" description="About Ujjwal Shrestha — Full Stack Developer from Nepal">
@@ -11,11 +13,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				title="About"
 				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
 			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
+				<Image
+					src={atWorkImg}
+					width={1553}
+					height={873}
 					alt="Ujjwal Shrestha at work"
+					format="webp"
+					quality={80}
+					widths={[800, 1553]}
+					sizes="(min-width: 50em) 1553px, 100vw"
 				/>
 			</Hero>
 
