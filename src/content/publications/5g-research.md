@@ -1,8 +1,17 @@
-﻿---
+---
 title: 5G Network Deployment Planning Using Metaheuristic Approaches
 publishDate: 2024-07-09 00:00:00
-img: /assets/stock-4.jpg
-img_alt: A visualization of 5G base station deployment across urban and rural areas
+journal: Telecom (MDPI)
+doi: https://www.mdpi.com/2673-4001/5/3/30
+authors:
+  - Binod Sapkota
+  - Rijan Ghimire
+  - Paras Pujara
+  - Shashank Ghimire
+  - Ujjwal Shrestha
+  - Roshani Ghimire
+  - Babu R. Dawadi
+  - Shashidhar R. Joshi
 description: Published research comparing Genetic Algorithm, PSO, Simulated Annealing, and Grey Wolf Optimizer for optimizing 5G base station deployment in Nepal.
 tags:
   - Research
@@ -14,8 +23,6 @@ tags:
 ## Overview
 
 Published in [Telecom (MDPI)](https://www.mdpi.com/2673-4001/5/3/30) on 9 July 2024, this research focuses on optimizing 5G base station deployment and visualization, addressing the escalating demands for high data rates and low latency.
-
-**Authors:** Binod Sapkota, Rijan Ghimire, Paras Pujara, Shashank Ghimire, Ujjwal Shrestha, Roshani Ghimire, Babu R. Dawadi, Shashidhar R. Joshi
 
 **Affiliation:** Department of Electronics and Computer Engineering, Thapathali Campus, Institute of Engineering, Tribhuvan University, Kathmandu, Nepal
 
@@ -36,4 +43,3 @@ The study compares the effectiveness of Genetic Algorithm (GA), Particle Swarm O
 The research enhances 5G Multi-Tier Radio Access Network (RAN) planning and offers valuable insights for efficient network planning in Nepal and similar deployment contexts.
 
 **Published:** Telecom 2024, 5(3), 30 — MDPI
-**DOI:** [https://www.mdpi.com/2673-4001/5/3/30](https://www.mdpi.com/2673-4001/5/3/30)

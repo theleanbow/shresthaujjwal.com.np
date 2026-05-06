@@ -25,4 +25,16 @@ export const collections = {
 			img_alt: z.string().optional(),
 		}),
 	}),
+	publications: defineCollection({
+		loader: glob({ base: './src/content/publications', pattern: '**/*.md' }),
+		schema: z.object({
+			title: z.string(),
+			description: z.string(),
+			publishDate: z.coerce.date(),
+			journal: z.string(),
+			doi: z.string().url(),
+			authors: z.array(z.string()),
+			tags: z.array(z.string()),
+		}),
+	}),
 };
