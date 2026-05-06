@@ -13,7 +13,7 @@ tags:
 
 ## Overview
 
-During **INSPIRE Nepal 2024**, our team collaborated with **NCRS (Nepal Red Cross Society)** to build a Disaster Risk Reduction (DRR) tracking web application. The system was designed to help NCRS manage and monitor their field programs more effectively.
+During **INSPIRE Nepal 2024**, our team collaborated with **NCRS (Nepal Christian Relief Services)** to build a Disaster Risk Reduction (DRR) tracking web application. The system was designed to help NCRS manage and monitor their field programs more effectively.
 
 ## What We Built
 

@@ -1,5 +1,5 @@
 ﻿---
-title: Patient Navigator System
+title: Patient Navigator and Privacy System
 publishDate: 2025-11-01 00:00:00
 img: /assets/stock-1.jpg
 img_alt: A healthcare navigation interface
@@ -13,7 +13,7 @@ tags:
 
 ## Overview
 
-The Patient Navigator System was developed for **SDSS (Sundar Dhoka Sathi Sewa)** over 4 months (August to November 2025), delivering **65+ user stories** across **7 agile sprints**.
+The Patient Navigator and Privacy System was developed for **SDSS (Sundar Dhoka Sathi Sewa)** over 4 months (August to November 2025), delivering **65+ user stories** across **7 agile sprints**.
 
 ## Key Outcomes
 

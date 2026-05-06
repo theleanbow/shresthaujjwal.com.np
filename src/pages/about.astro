@@ -1,247 +1,552 @@
 ---
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { Image } from 'astro:assets';
-import atWorkImg from '../assets/at-work.jpg';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import atWorkImg from "../assets/at-work.jpg";
 ---
 
-<BaseLayout title="About | Ujjwal Shrestha" description="About Ujjwal Shrestha — Full Stack Developer from Nepal">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<Image
-					src={atWorkImg}
-					width={1553}
-					height={873}
-					alt="Ujjwal Shrestha at work"
-					format="webp"
-					quality={80}
-					widths={[800, 1553]}
-					sizes="(min-width: 50em) 1553px, 100vw"
-				/>
-			</Hero>
+<BaseLayout
+  title="About | Ujjwal Shrestha"
+  description="About Ujjwal Shrestha — Full Stack Developer from Nepal"
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+      >
+        <Image
+          src={atWorkImg}
+          width={1553}
+          height={873}
+          alt="Ujjwal Shrestha at work"
+          format="webp"
+          quality={80}
+          widths={[800, 1553]}
+          sizes="(min-width: 50em) 1553px, 100vw"
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						I'm Ujjwal Shrestha — a curious developer from Lalitpur, Nepal with a knack for random useful knowledge.
-						I enjoy building full-stack web applications that solve real problems, and I care deeply about the people who use them.
-					</p>
-					<p>
-						My experience spans React.js, ASP.NET, relational databases, and Azure cloud services. I've worked on
-						everything from sustainability platforms to patient navigation systems, always with an eye on usability
-						and impact.
-					</p>
-					<p>
-						Outside of code, I mentor peers, run workshops, and contribute to the tech community in Nepal through
-						organizations like Tensor IOE and INSPIRE. I also enjoy chess — it keeps the strategic thinking sharp.
-					</p>
-				</div>
-			</section>
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p>
+            I'm Ujjwal Shrestha — a curious developer from Lalitpur, Nepal with
+            a knack for random useful knowledge. I enjoy building full-stack web
+            applications that solve real problems, and I care deeply about the
+            people who use them.
+          </p>
+          <p>
+            My experience spans React.js, ASP.NET, relational databases, and
+            Azure cloud services. I've worked on everything from sustainability
+            platforms to patient navigation systems, always with an eye on
+            usability and impact.
+          </p>
+          <p>
+            Outside of code, I mentor peers, run workshops, and contribute to
+            the tech community in Nepal through organizations like Tensor IOE
+            and INSPIRE. I also enjoy chess — it keeps the strategic thinking
+            sharp.
+          </p>
+        </div>
+      </section>
 
-			<section>
-				<h2 class="section-title">Experience</h2>
-				<div class="content">
-					<div class="experience-item">
-						<h3>Solution Developer — Apprentice</h3>
-						<p class="org">INSPIRE · Apprenticeship · Aug 2024 – Jan 2025 · On-site</p>
-						<ul>
-							<li>Developed full-stack web applications using React.js, .NET, and relational databases.</li>
-							<li>Leveraged Azure cloud services for hosting, deployment, and integration.</li>
-							<li>Designed APIs and implemented Agile methodologies for effective project management.</li>
-							<li>Solved real-world challenges in sustainability, enhancing problem-solving and teamwork.</li>
-							<li>Participated in workshops on DevOps, Cloud Management, and Database Design with national and international mentors.</li>
-							<li>Applied IBM Garage Essentials and Enterprise Design Thinking to create impactful solutions.</li>
-						</ul>
-						<p class="skills-used">ASP.NET · React.js · Design Thinking · UX · Empathy Mapping · Azure DevOps · Git</p>
-					</div>
+      <section>
+        <h2 class="section-title">Experience</h2>
+        <div class="content">
+          <div class="timeline">
+          <div class="experience-item">
+            <h3>Survey Lead & Data Analyst</h3>
+            <p class="org">HAEFA · Apr 2026 · Nepal</p>
+            <ul>
+              <li>Led field survey activities for evaluation of a biogas project, ensuring accurate and timely data collection.</li>
+              <li>Conducted surveys with 15 participants, maintaining data quality and consistency throughout.</li>
+              <li>Cleaned, analyzed, and interpreted survey data to assess project effectiveness and impact.</li>
+              <li>Coordinated with team members to align survey objectives with project evaluation goals.</li>
+            </ul>
+          </div>
 
-					<div class="experience-item">
-						<h3>Mentor</h3>
-						<p class="org">INSPIRE Nepal 2025 · Sep 2025 – Dec 2025 · 4 months</p>
-						<ul>
-							<li>Mentored a development team building a livelihood tracking software for MCDS.</li>
-							<li>Guided the team through the full SDLC — from empathy mapping and requirements to delivery.</li>
-							<li>Coached on Agile sprint planning, API design, code quality, and Design Thinking practices.</li>
-						</ul>
-						<p class="skills-used">Mentoring · Design Thinking · React.js · ASP.NET · Agile · IBM Garage Essentials</p>
-					</div>
+          <div class="experience-item">
+            <h3>Document & Localization Consultant</h3>
+            <p class="org">Tearfund Nepal · Jan 2026</p>
+            <ul>
+              <li>Converted a full-length book from Preeti font to Unicode, making it accessible and usable in modern document editors.</li>
+              <li>Reformatted the document layout from a single-book format to a structured, print-ready format.</li>
+              <li>Translated selected sections from English to Nepali to support local readership.</li>
+            </ul>
+          </div>
 
-					<div class="experience-item">
-						<h3>Solution Developer (Participant)</h3>
-						<p class="org">INSPIRE Nepal 2024 · INSPIRE</p>
-						<ul>
-							<li>Built a DRR (Disaster Risk Reduction) tracking web app for NCRS (Nepal Red Cross Society).</li>
-							<li>Tracked beneficiaries, groups, activities, phases, sectors, and fiscal year data.</li>
-							<li>Implemented beneficiary and group activity tracking per fiscal year for program reporting.</li>
-						</ul>
-						<p class="skills-used">React.js · ASP.NET · Design Thinking · Agile</p>
-					</div>
+          <div class="experience-item">
+            <h3>Program Ambassador and Mentor</h3>
+              <p class="org">
+                INSPIRE Nepal 2025 · Sep 2025 – Dec 2025 · 4 months
+              </p>
+              <ul>
+                <li>
+                  Mentored a development team building a livelihood tracking
+                  software for MCDS.
+                </li>
+                <li>
+                  Guided the team through the full SDLC — from empathy mapping
+                  and requirements to delivery.
+                </li>
+                <li>
+                  Coached on Agile sprint planning, API design, code quality,
+                  and Design Thinking practices.
+                </li>
+              </ul>
+              <p class="skills-used">
+                Mentoring · Design Thinking · React.js · ASP.NET · Agile · IBM
+                Garage Essentials
+              </p>
+            </div>
 
-					<div class="experience-item">
-						<h3>Software Coordinator</h3>
-						<p class="org">Tensor, IOE Thapathali · Feb 2023 – Feb 2024</p>
-						<ul>
-							<li>Fostered a collaborative environment by actively engaging with community members.</li>
-							<li>Organized C programming workshops for first-year students alongside teammates.</li>
-						</ul>
-					</div>
+            <div class="experience-item">
+              <h3>Solution Developer</h3>
+              <p class="org">INSPIRE Nepal · Aug 2024 – Jan 2025 · On-site</p>
+              <ul>
+                <li>
+                  Built a DRR (Disaster Risk Reduction) tracking web app for
+                  NCRS (Nepal Christian Relief Services) — tracking
+                  beneficiaries, groups, activities, phases, sectors, and fiscal
+                  year data.
+                </li>
+                <li>
+                  Developed full-stack web applications using React.js, .NET,
+                  and relational databases.
+                </li>
+                <li>
+                  Leveraged Azure cloud services for hosting, deployment, and
+                  integration.
+                </li>
+                <li>
+                  Designed APIs and implemented Agile methodologies for
+                  effective project management.
+                </li>
+                <li>
+                  Solved real-world challenges in sustainability, enhancing
+                  problem-solving and teamwork.
+                </li>
+                <li>
+                  Participated in workshops on DevOps, Cloud Management, and
+                  Database Design with national and international mentors.
+                </li>
+                <li>
+                  Applied IBM Garage Essentials and Enterprise Design Thinking
+                  to create impactful solutions.
+                </li>
+              </ul>
+              <p class="skills-used">
+                ASP.NET · React.js · Design Thinking · UX · Empathy Mapping ·
+                Azure DevOps · Git · Agile
+              </p>
+            </div>
+            <div class="experience-item">
+              <h3>Data Entry and Management Volunteer</h3>
+              <p class="org">Micah Nepal · May 2024</p>
+              <ul>
+                <li>
+                  Updated the Micah Nepal database by collecting missing data
+                  and correcting existing records for accurate, consistent
+                  reporting.
+                </li>
+              </ul>
+            </div>
+            <div class="experience-item">
+              <h3>Counsellor</h3>
+              <p class="org">Tearfund Nepal · Feb 2024 – Mar 2024</p>
+              <ul>
+                <li>
+                  Reviewed evaluation and annual reports for Tearfund Nepal and
+                  its partners.
+                </li>
+                <li>
+                  Prepared comprehensive reports summarizing key change stories
+                  and learnings.
+                </li>
+                <li>
+                  Coordinated with partner organizations to ensure accurate and
+                  timely data submission.
+                </li>
+              </ul>
+            </div>	
+            <div class="experience-item">
+              <h3>Software Coordinator</h3>
+              <p class="org">Tensor, IOE Thapathali · Feb 2023 – Feb 2024</p>
+              <ul>
+                <li>
+                  Fostered a collaborative environment by actively engaging with
+                  community members.
+                </li>
+                <li>
+                  Organized C programming workshops for first-year students
+                  alongside teammates.
+                </li>
+              </ul>
+            </div>
 
-					<div class="experience-item">
-						<h3>Web Developer (Volunteer)</h3>
-						<p class="org">National Human Rights Protection Forum for the Disabled, Nepal · Sep 2022 – Oct 2022</p>
-						<ul>
-							<li>Designed the organization's website with user management and role-based permissions using WordPress CMS.</li>
-							<li>Set up and configured email accounts in Microsoft Outlook for efficient organizational communication.</li>
-						</ul>
-					</div>
+            <div class="experience-item">
+              <h3>Project Manager (Volunteer)</h3>
+              <p class="org">
+                National Human Rights Protection Forum for the Disabled, Nepal ·
+                Nov 2022 – Dec 2023
+              </p>
+              <ul>
+                <li>Drafted and submitted 20+ grant proposals.</li>
+                <li>
+                  Organized physical and digital office files and documents for
+                  smooth operations.
+                </li>
+                <li>Committed to making a positive impact in the community.</li>
+              </ul>
+            </div>
+            <div class="experience-item">
+              <h3>Web Developer</h3>
+              <p class="org">
+                National Human Rights Protection Forum for the Disabled, Nepal ·
+                Sep 2022 – Oct 2022
+              </p>
+              <ul>
+                <li>
+                  Designed the organization's website with user management and
+                  role-based permissions using WordPress CMS.
+                </li>
+                <li>
+                  Set up and configured email accounts in Microsoft Outlook for
+                  efficient organizational communication.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-					<div class="experience-item">
-						<h3>Project Manager (Volunteer)</h3>
-						<p class="org">National Human Rights Protection Forum for the Disabled, Nepal · Nov 2022 – Dec 2023</p>
-						<ul>
-							<li>Drafted and submitted 20+ grant proposals.</li>
-							<li>Organized physical and digital office files and documents for smooth operations.</li>
-							<li>Committed to making a positive impact in the community.</li>
-						</ul>
-					</div>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <div class="timeline">
+            <div class="experience-item">
+              <h3>Bachelor of Electronics, Communication and Information Engineering</h3>
+              <p class="org">IOE Thapathali Campus, Tribhuvan University · Kathmandu, Nepal</p>
+            </div>
+            <div class="experience-item">
+              <h3>+2 (Higher Secondary)</h3>
+              <p class="org">Millennium Secondary School · Tansen, Palpa</p>
+            </div>
+            <div class="experience-item">
+              <h3>SLC</h3>
+              <p class="org">Everest English Boarding School · Butwal, Rupandehi</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-					<div class="experience-item">
-						<h3>Counsellor (Volunteer)</h3>
-						<p class="org">Tearfund Nepal · Feb 2024 – Mar 2024</p>
-						<ul>
-							<li>Reviewed evaluation and annual reports for Tearfund Nepal and its partners.</li>
-							<li>Prepared comprehensive reports summarizing key change stories and learnings.</li>
-							<li>Coordinated with partner organizations to ensure accurate and timely data submission.</li>
-						</ul>
-					</div>
+      <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="content">
+          <div class="skills-grid">
+            <div class="skill-row">
+              <span class="skill-category">Development</span>
+              <div class="skill-tags">
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" />
+                  React.js
+                </span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" />
+                  Next.js
+                </span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt="" />
+                  ASP.NET
+                </span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" />
+                  TypeScript
+                </span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" />
+                  JavaScript
+                </span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" />
+                  HTML/CSS
+                </span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="" />
+                  Azure
+                </span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="" />
+                  SQL
+                </span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" />
+                  Git
+                </span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="" />
+                  WordPress
+                </span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="" />
+                  Flutter
+                </span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-category">Data & MEL</span>
+              <div class="skill-tags">
+                <span class="skill-tag">📊 Data Analysis</span>
+                <span class="skill-tag">📋 Survey Design</span>
+                <span class="skill-tag">📈 M&E Frameworks</span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" />
+                  Power BI
+                </span>
+                <span class="skill-tag">📉 SPSS</span>
+                <span class="skill-tag">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="" />
+                  Excel
+                </span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-category">NGO & PM</span>
+              <div class="skill-tags">
+                <span class="skill-tag">✍️ Grant Writing</span>
+                <span class="skill-tag">🔄 Agile</span>
+                <span class="skill-tag">🤝 Stakeholder Coordination</span>
+                <span class="skill-tag">📝 Reporting</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-category">Design</span>
+              <div class="skill-tags">
+                <span class="skill-tag">💡 Design Thinking</span>
+                <span class="skill-tag">🗺️ Empathy Mapping</span>
+                <span class="skill-tag">🎨 UI/UX</span>
+                <span class="skill-tag">🏭 IBM Garage Essentials</span>
+                <span class="skill-tag">🖼️ Graphics Design</span>
+                <span class="skill-tag">🎬 Video Editing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-					<div class="experience-item">
-						<h3>Data Entry and Management Volunteer</h3>
-						<p class="org">Micah Nepal · May 2024</p>
-						<ul>
-							<li>Updated the Micah Nepal database by collecting missing data and correcting existing records for accurate, consistent reporting.</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Bachelor of Electronics, Communication and Information Engineering — IOE Thapathali Campus, Tribhuvan University, Nepal (2019 – Present)</p>
-				</div>
-			</section>
-
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>React.js · Next.js · React Native · ASP.NET · .NET · Azure · Azure DevOps · Git · SQL · TypeScript · JavaScript · HTML/CSS · WordPress · Flutter · Design Thinking · Empathy Mapping · UX · Agile · IBM Garage Essentials · Microsoft Office</p>
-				</div>
-			</section>
-		</main>
-
-		<ContactCTA />
-	</div>
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  /* Timeline */
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-regular), transparent);
+    border-radius: 2px;
+  }
 
-	.experience-item {
-		margin-bottom: 2rem;
-		padding-bottom: 2rem;
-		border-bottom: 1px solid var(--gray-800);
-	}
+  .experience-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+  }
 
-	.experience-item:last-child {
-		border-bottom: none;
-	}
+  .experience-item:last-child {
+    padding-bottom: 0;
+  }
 
-	.experience-item h3 {
-		font-size: var(--text-lg);
-		color: var(--gray-0);
-		margin-bottom: 0.25rem;
-	}
+  /* dot — centered on the line (line is at left:0, width:2px → center at 1px) */
+  .experience-item::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0.45rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-left: calc(-0.75rem / 2 + 1px);
+    border-radius: 50%;
+    background: var(--gray-999);
+    border: 2px solid var(--accent-regular);
+    transition: background var(--theme-transition);
+    z-index: 1;
+  }
 
-	.experience-item .org {
-		font-size: var(--text-sm);
-		color: var(--accent-regular);
-		margin-bottom: 0.75rem;
-	}
+  .experience-item:hover::before {
+    background: var(--accent-regular);
+  }
 
-	.experience-item ul {
-		padding-left: 1.25rem;
-		margin-bottom: 0.75rem;
-	}
+  .experience-item h3 {
+    font-size: var(--text-lg);
+    color: var(--gray-0);
+    margin-bottom: 0.2rem;
+    line-height: 1.3;
+  }
 
-	.experience-item ul li {
-		margin-bottom: 0.25rem;
-		color: var(--gray-300);
-	}
+  .experience-item .org {
+    font-size: var(--text-sm);
+    color: var(--accent-regular);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
 
-	.skills-used {
-		font-size: var(--text-sm);
-		color: var(--gray-400);
-		font-style: italic;
-	}
+  .experience-item ul {
+    padding-left: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  .experience-item ul li {
+    margin-bottom: 0.35rem;
+    color: var(--gray-300);
+    line-height: 1.6;
+  }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+  .skills-used {
+    font-size: var(--text-sm);
+    color: var(--gray-400);
+    font-style: italic;
+  }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .skill-row {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: 0.75rem 1.5rem;
+    align-items: start;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--gray-800);
+  }
+
+  .skill-row:last-child {
+    border-bottom: none;
+  }
+
+  .skill-category {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--accent-regular);
+    padding-top: 0.3rem;
+    white-space: nowrap;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .skill-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999rem;
+    font-size: var(--text-base);
+    color: var(--gray-200);
+    background: var(--gradient-subtle);
+    border: 1px solid var(--gray-800);
+    cursor: default;
+    line-height: 1.4;
+    transition:
+      border-color var(--theme-transition),
+      color var(--theme-transition),
+      transform var(--theme-transition),
+      box-shadow var(--theme-transition);
+  }
+
+  .skill-tag:hover {
+    border-color: var(--accent-regular);
+    color: var(--gray-0);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .skill-tag img {
+    width: 1rem;
+    height: 1rem;
+    object-fit: contain;
+    flex-shrink: 0;
+    /* keep devicons vertically centered with text */
+    margin-top: 0;
+    display: block;
+  }
+
+  @media (min-width: 50em) {
+    .skill-row {
+      grid-template-columns: 10rem 1fr;
+    }
+
+    .skill-tag {
+      font-size: var(--text-md);
+      padding: 0.35rem 1rem;
+    }
+
+    .skill-tag img {
+      width: 1.1rem;
+      height: 1.1rem;
+    }
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>
