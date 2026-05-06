@@ -21,7 +21,7 @@ From September to December 2025, I served as a **mentor** at **INSPIRE Nepal 202
 - Facilitated Design Thinking workshops including empathy mapping and user persona definition
 - Reviewed architecture decisions, code quality, and API design
 - Coached the team on Agile sprint planning and delivery practices
-- Shared practical experience from the GarageINSPIRE apprenticeship and the Patient Navigator project
+- Shared practical experience from the INSPIRE apprenticeship and the Patient Navigator project
 - Supported the team in navigating real-world client requirements and constraints
 
 ## The Product

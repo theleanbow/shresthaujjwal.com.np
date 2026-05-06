@@ -1,9 +1,9 @@
 ﻿---
-title: GarageINSPIRE Apprenticeship
+title: INSPIRE Garage Apprenticeship
 publishDate: 2025-01-01 00:00:00
 img: /assets/stock-2.jpg
 img_alt: A team collaborating on a software project in a modern workspace
-description: A 6-month full-stack development apprenticeship at GarageINSPIRE, building real-world solutions using React.js, ASP.NET, and Azure with IBM Garage and Design Thinking methodologies.
+description: A 5-month full-stack development apprenticeship at INSPIRE, building real-world solutions using React.js, ASP.NET, and Azure with IBM Garage and Design Thinking methodologies.
 tags:
   - React.js
   - ASP.NET
@@ -13,7 +13,7 @@ tags:
 
 ## Overview
 
-From August 2024 to January 2025, I completed a 6-month on-site apprenticeship at **GarageINSPIRE** as a Solution Developer. The program focused on building real-world solutions to sustainability challenges using enterprise-grade tools and methodologies.
+From August 2024 to January 2025, I completed a 5-month on-site apprenticeship at **INSPIRE** as a Solution Developer. The program focused on building real-world solutions to sustainability challenges using enterprise-grade tools and methodologies.
 
 ## What I Did
 

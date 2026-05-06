@@ -37,4 +37,4 @@ The system also tracked **beneficiary and group activities per fiscal year**, gi
 
 ## Process
 
-The project followed the GarageINSPIRE methodology — empathy mapping with NCRS stakeholders, defining user personas, and iterating through prototypes before full implementation. The team worked in agile sprints to deliver a working system within the program timeline.
+The project followed the agile methodology — empathy mapping with NCRS stakeholders, defining user personas, and iterating through prototypes before full implementation. The team worked in agile sprints to deliver a working system within the program timeline.
