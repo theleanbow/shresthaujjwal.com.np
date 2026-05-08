@@ -13,7 +13,7 @@ tags:
 
 ## Overview
 
-The Patient Navigator and Privacy System was developed for **SDSS (Sundar Dhoka Sathi Sewa)** over 4 months (August to November 2025), delivering **65+ user stories** across **7 agile sprints**.
+The Patient Navigator and Privacy System was developed for **SDSS (Sundar Dhoka Sathi Sewa)** over 5 months (August to December 2025), delivering **65+ user stories** across **7 agile sprints**.
 
 ## Key Outcomes
 

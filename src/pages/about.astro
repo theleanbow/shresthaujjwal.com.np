@@ -143,6 +143,19 @@ import atWorkImg from "../assets/at-work.jpg";
               </p>
             </div>
             <div class="experience-item">
+              <h3>Full Stack Developer</h3>
+              <p class="org">SDSS (Sundar Dhoka Sathi Sewa) · Aug 2025 – Nov 2025 · 4 months</p>
+              <ul>
+                <li>Built a full-stack Patient Navigator and Privacy System, delivering 65+ user stories across 7 agile sprints.</li>
+                <li>Implemented enterprise-grade JWT authentication with RBAC (Admin, Finance, Donor roles) and HTTP-only cookies.</li>
+                <li>Integrated real-time data sync via SignalR/WebSocket and automated email follow-up reminders.</li>
+                <li>Reduced page load time by 50% and database query time by 60–80% through performance optimization.</li>
+                <li>Added one-click professional PDF report generation and advanced multi-criteria patient search.</li>
+              </ul>
+              <p class="skills-used">React.js · ASP.NET Core · SignalR · JWT · Azure · Agile</p>
+            </div>
+
+            <div class="experience-item">
               <h3>Data Entry and Management Volunteer</h3>
               <p class="org">Micah Nepal · May 2024</p>
               <ul>
@@ -543,28 +556,11 @@ import atWorkImg from "../assets/at-work.jpg";
   .skill-tag {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
     gap: 0.35rem;
-    padding: 0.3rem 0.8rem;
-    border-radius: 999rem;
     font-size: var(--text-base);
-    color: var(--gray-200);
-    background: var(--gradient-subtle);
-    border: 1px solid var(--gray-800);
+    color: var(--gray-300);
     cursor: default;
     line-height: 1.4;
-    transition:
-      border-color var(--theme-transition),
-      color var(--theme-transition),
-      transform var(--theme-transition),
-      box-shadow var(--theme-transition);
-  }
-
-  .skill-tag:hover {
-    border-color: var(--accent-regular);
-    color: var(--gray-0);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-sm);
   }
 
   .skill-tag img {
