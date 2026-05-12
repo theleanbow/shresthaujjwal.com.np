@@ -54,6 +54,12 @@ const posts = (await getCollection('blog')).sort(
 </BaseLayout>
 
 <style>
+	@media (min-width: 50em) {
+		main.wrapper {
+			padding-inline: 2.5rem;
+		}
+	}
+
 	.post-list {
 		list-style: none;
 		padding: 0;

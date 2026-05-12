@@ -58,7 +58,7 @@ const readingTime = Math.max(1, Math.ceil(wordCount / 200));
 			</header>
 
 			<main class="wrapper">
-				<div class="content-wrap">
+				<div class="content-grid">
 					<article class="content">
 						{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
 						<Content />
@@ -99,6 +99,12 @@ const readingTime = Math.max(1, Math.ceil(wordCount / 200));
 	header {
 		padding-bottom: 2.5rem;
 		border-bottom: 1px solid var(--gray-800);
+	}
+
+	@media (min-width: 50em) {
+		header .wrapper {
+			padding-inline: 2.5rem;
+		}
 	}
 
 	.back-link {
@@ -148,10 +154,24 @@ const readingTime = Math.max(1, Math.ceil(wordCount / 200));
 		background: var(--gradient-subtle);
 	}
 
-	/* ── Content wrapper ── */
-	.content-wrap {
-		max-width: 74ch;
-		margin-inline: auto;
+	/* ── Content grid — matches about page 3-col layout ── */
+	.content-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+	@media (min-width: 50em) {
+		.content-grid {
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.content {
+			grid-column: 2;
+		}
 	}
 
 	/* ── Base prose ── */

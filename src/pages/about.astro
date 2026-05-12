@@ -371,7 +371,13 @@ import atWorkImg from "../assets/at-work.jpg";
 </BaseLayout>
 
 <style>
-  .about {
+	@media (min-width: 50em) {
+		main.wrapper {
+			padding-inline: 2.5rem;
+		}
+	}
+
+	.about {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
